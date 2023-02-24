@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test.MainPage">
+    <Grid BackgroundColor="Black" RowSpacing="1" ColumnSpacing="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.5*" />
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="2.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Top part-->
+
+        <Label Grid.ColumnSpan="4"
+               Grid.Row="0"
+               Text="0"
+               FontSize="150"
+               Margin="0"
+               Padding="0"
+               HorizontalOptions="End"
+               VerticalOptions="Center"/>
+
+        <!--1st row-->
+        <Button Grid.ColumnSpan="2"
+                Grid.Row="1"
+                BackgroundColor="DarkGray"
+                Text="C"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+        <Button Grid.Column="2"
+                Grid.Row="1"
+                BackgroundColor="DarkGray"
+                Text="DEL"
+                FontSize="Large"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+        <Button Grid.Column="3"
+                Grid.Row="1"
+                BackgroundColor="Orange"
+                Text="/"
+                FontSize="Large"
+                TextColor="White"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        
+        <!--2nd row-->
+        <Button Grid.Column="0"
+                Grid.Row="2"
+                BackgroundColor="DarkGray"
+                Text="7"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="1"
+                Grid.Row="2"
+                BackgroundColor="DarkGray"
+                Text="8"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="2"
+                Grid.Row="2"
+                BackgroundColor="DarkGray"
+                Text="9"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="3"
+                Grid.Row="2"
+                BackgroundColor="Orange"
+                Text="x"
+                FontSize="Large"
+                TextColor="White"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+        <!--3rd row-->
+        <Button Grid.Column="0"
+                Grid.Row="3"
+                BackgroundColor="DarkGray"
+                Text="4"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="1"
+                Grid.Row="3"
+                BackgroundColor="DarkGray"
+                Text="5"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="2"
+                Grid.Row="3"
+                BackgroundColor="DarkGray"
+                Text="6"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="3"
+                Grid.Row="3"
+                BackgroundColor="Orange"
+                Text="-"
+                FontSize="Large"
+                TextColor="White"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+        <!--4th row-->
+        <Button Grid.Column="0"
+                Grid.Row="4"
+                BackgroundColor="DarkGray"
+                Text="1"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="1"
+                Grid.Row="4"
+                BackgroundColor="DarkGray"
+                Text="2"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="2"
+                Grid.Row="4"
+                BackgroundColor="DarkGray"
+                Text="3"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Column="3"
+                Grid.Row="4"
+                BackgroundColor="Orange"
+                Text="="
+                FontSize="Large"
+                TextColor="White"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+        
+        
+        <!--Last row-->
+        <Button Grid.ColumnSpan="2"
+                Grid.Row="5"
+                BackgroundColor="DarkGray"
+                Text="0"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+        <Button Grid.Column="2"
+                Grid.Row="5"
+                BackgroundColor="DarkGray"
+                Text="."
+                FontSize="Large"
+                TextColor="Black"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+        <Button Grid.Column="3"
+                Grid.Row="5"
+                BackgroundColor="Orange"
+                Text="="
+                FontSize="Large"
+                TextColor="White"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+
+    </Grid>
+
+</ContentPage>
