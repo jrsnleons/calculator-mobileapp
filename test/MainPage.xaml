@@ -21,19 +21,24 @@
         <!--Top part-->
 
         <Label Grid.ColumnSpan="4"
+               x:Name="BtnRes"
                Grid.Row="0"
                Text="0"
-               FontSize="150"
+               TextColor="White"
+               FontSize="100"
                Margin="0"
                Padding="0"
                HorizontalOptions="End"
                VerticalOptions="Center"/>
 
         <!--1st row-->
-        <Button Grid.ColumnSpan="2"
+        <Button 
+                Grid.ColumnSpan="2"
                 Grid.Row="1"
                 BackgroundColor="DarkGray"
-                Text="C"
+                Clicked="BtnClr"
+                Text="C"    
+                FontSize="60"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand"/>
@@ -41,6 +46,7 @@
         <Button Grid.Column="2"
                 Grid.Row="1"
                 BackgroundColor="DarkGray"
+                Clicked="BtnDel"
                 Text="DEL"
                 FontSize="Large"
                 TextColor="Black"
@@ -55,11 +61,13 @@
                 TextColor="White"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand"/>
-        
+
         <!--2nd row-->
-        <Button Grid.Column="0"
+        <Button 
+                Grid.Column="0"
                 Grid.Row="2"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="7"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -67,6 +75,7 @@
         <Button Grid.Column="1"
                 Grid.Row="2"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="8"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -74,6 +83,7 @@
         <Button Grid.Column="2"
                 Grid.Row="2"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="9"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -91,6 +101,7 @@
         <Button Grid.Column="0"
                 Grid.Row="3"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="4"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -98,6 +109,7 @@
         <Button Grid.Column="1"
                 Grid.Row="3"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="5"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -105,6 +117,7 @@
         <Button Grid.Column="2"
                 Grid.Row="3"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="6"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -122,6 +135,7 @@
         <Button Grid.Column="0"
                 Grid.Row="4"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="1"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -129,6 +143,7 @@
         <Button Grid.Column="1"
                 Grid.Row="4"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="2"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -136,6 +151,7 @@
         <Button Grid.Column="2"
                 Grid.Row="4"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="3"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -148,12 +164,13 @@
                 TextColor="White"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand"/>
-        
-        
+
+
         <!--Last row-->
         <Button Grid.ColumnSpan="2"
                 Grid.Row="5"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="0"
                 TextColor="Black"
                 VerticalOptions="FillAndExpand"
@@ -162,6 +179,7 @@
         <Button Grid.Column="2"
                 Grid.Row="5"
                 BackgroundColor="DarkGray"
+                Clicked="BtnAct"
                 Text="."
                 FontSize="Large"
                 TextColor="Black"
@@ -179,5 +197,5 @@
 
 
     </Grid>
-
+        
 </ContentPage>
