@@ -15,12 +15,17 @@ namespace test
             InitializeComponent();
         }
 
+        private decimal firstNumber;
+        private string operatorN;
+        private bool isOperatorClicked;
 
-        private void BtnAct (object sender, EventArgs e)
+
+        private void BtnAct(object sender, EventArgs e)
         {
-           var button=sender as Button;
-        if (BtnRes.Text == "0")
+            var button = sender as Button;
+            if (BtnRes.Text == "0" || isOperatorClicked)
             {
+                isOperatorClicked = false;
                 BtnRes.Text = button.Text;
             }
             else
@@ -28,7 +33,7 @@ namespace test
                 BtnRes.Text += button.Text;
             }
 
-            
+
         }
 
         private void BtnClr(object sender, EventArgs e)
@@ -39,19 +44,62 @@ namespace test
         private void BtnDel(object sender, EventArgs e)
         {
             string number = BtnRes.Text;
-            if(number != "0") 
-            { 
-                number = number.Remove(number.Length-1,1);
+            if (number != "0")
+            {
+                number = number.Remove(number.Length - 1, 1);
                 if (string.IsNullOrEmpty(number))
                 {
-                    BtnRes.Text="0";
+                    BtnRes.Text = "0";
                 }
-                else 
+                else
                 {
                     BtnRes.Text = number;
                 }
             }
         }
+
+        private void BtnOps(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            isOperatorClicked = true;
+            operatorN = button.Text;
+            firstNumber = Convert.ToDecimal(BtnRes.Text);
+
+        }
+
+        private void BtnEqual_Clicked(object sender, EventArgs e)
+        {
+            decimal secondNumber = Convert.ToDecimal(BtnRes.Text);
+            decimal finalResult = Calculate(firstNumber, secondNumber);
+            BtnRes.Text = finalResult.ToString();
+        }
+
+        public decimal Calculate(decimal firstNumber, decimal secondNumber)
+        {
+            decimal result = 0;
+            if (operatorN == "+")
+            {
+                result = firstNumber + secondNumber;
+            }
+            else if (operatorN == "-")
+            {
+                result = secondNumber - firstNumber;
+
+            }
+            else if (operatorN == "x")
+            {
+                result = (firstNumber * secondNumber);
+
+            }
+            else if (operatorN == "/")
+            {
+
+                result = firstNumber / secondNumber;
+            }
+            return result;
+        }
+
+
     }
 
 
